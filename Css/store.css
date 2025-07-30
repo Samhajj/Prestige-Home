@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+::selection {
+  /* color: goldenrod; */
+  background-color: rgba(218, 165, 32, 0.622);
+}
+
+.header {
+  position: absolute;
+  display: none;
+  transition: 1s ease-in-out;
+  z-index: 99999;
+}
+
+.header-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: center;
+  align-items: center;
+  top: 0;
+  padding: 20px 4.75rem;
+  position: fixed;
+  backdrop-filter: blur(50px);
+}
+
+.fave-logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  justify-content: left;
+}
+
+.fave-logo a {
+  color: white !important;
+  transition: ease-in-out 50ms;
+}
+.fave-logo a:hover {
+  color: black !important;
+}
+
+.nav-bar {
+  width: 100%;
+  display: grid;
+  justify-items: right;
+  justify-content: right;
+}
+nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  justify-content: right;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-bar a,
+a:visited {
+  display: inline-block;
+  color: black;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.702);
+}
+
+nav a:active {
+  color: rgba(0, 0, 0, 0.702);
+}
+.active {
+  display: block;
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
+#store-hero {
+  position: relative;
+}
+
+.store-body {
+  background: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.916),
+      rgba(255, 255, 255, 0.575)
+    ),
+    url(/Images/Realestate/3.jpg);
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+  background-size: 100%;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: grid;
+  justify-items: left;
+  align-content: center;
+  align-items: center;
+}
+
+.store-body-container {
+  padding: 0 4.75em;
+}
+
+.store-body-container h3 {
+  font-size: 70px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 700;
+  color: goldenrod;
+}
+
+.store-body-container p {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+#store {
+  width: 100%;
+  height: auto;
+}
+
+.store-container {
+  padding: 0 2.75rem 40px;
+}
+
+.store-heading {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 28px;
+  color: goldenrod;
+  margin: 70px 0 40px;
+}
+
+.store-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+  align-content: center;
+}
+
+.store-items a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.store-item {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.108);
+  padding-bottom: 15px;
+}
+
+.store-item-image {
+  width: 100%;
+  height: auto;
+}
+
+.store-item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0;
+}
+
+.store-item-name {
+  color: rgba(0, 0, 0, 0.599);
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.store-item-price {
+  color: goldenrod;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+#counter-section {
+  background: linear-gradient(
+      40deg,
+      rgba(255, 255, 255, 0.575),
+      rgba(0, 0, 0, 0.916)
+    ),
+    url(/Images/Realestate/7.webp);
+  background-size: 100%;
+  background-position: top center;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  align-items: center;
+}
+
+.counter-section {
+  padding: 40px 4.75rem;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.counter {
+  width: 80%;
+  height: auto;
+  display: grid;
+  justify-items: right;
+  align-content: center;
+  align-items: center;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+}
+
+.span1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: goldenrod;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.599);
+  font-family: "Maven Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 0;
+}

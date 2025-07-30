@@ -1,0 +1,208 @@
+@media (max-width: 600px) {
+  .header {
+    width: 100% !important;
+    position: absolute;
+    display: none;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+  }
+
+  .header-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    top: 0;
+    padding: 10px 1.75rem;
+    position: fixed;
+    backdrop-filter: blur(50px);
+  }
+
+  .fave-logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: left;
+  }
+
+  .fave-logo a {
+    color: white !important;
+    transition: ease-in-out 50ms;
+  }
+  .fave-logo a:hover {
+    color: black !important;
+  }
+  .mobile-nav-bar {
+    width: 100%;
+    display: grid !important;
+    justify-content: right;
+    justify-items: right;
+    align-items: right;
+    align-content: center;
+  }
+  .fa-bars {
+    padding-right: 10px;
+  }
+
+  .mobile-nav {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    margin-top: 30px;
+    backdrop-filter: blur(150px) !important;
+    background: rgba(255, 255, 255, 0.077);
+    padding: 20px 10px 20px 20px;
+    display: none;
+  }
+  .mobile-nav nav {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: right;
+    align-content: center;
+    row-gap: 2px;
+  }
+
+  .nav-bar {
+    display: none !important;
+  }
+
+  nav a:hover {
+    color: rgba(0, 0, 0, 0.702);
+  }
+
+  nav a:active {
+    color: rgba(0, 0, 0, 0.702);
+  }
+  .active {
+    display: block;
+  }
+
+  .contact-container {
+    padding: 0 1.75em;
+  }
+
+  .contact h3 {
+    font-size: 50px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 700;
+    color: goldenrod;
+  }
+
+  .contact p {
+    width: 100%;
+    font-size: 17px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
+    color: white;
+    word-wrap: balance;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.077);
+    backdrop-filter: blur(150px) !important;
+    padding: 90px 0;
+    border-radius: 5px;
+  }
+
+  #contact-form form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 0 20px;
+  }
+  input {
+    width: 100%;
+    padding: 15px 18px 15px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.791);
+    outline: none;
+    font-family: "Maven Pro", sans-serif;
+    color: rgba(0, 0, 0, 0.599);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0 1.75rem;
+  }
+
+  .contact-info p {
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Maven Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  /* .socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+  } */
+
+  .contact-info i {
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 40px;
+    padding-right: 5px;
+  }
+
+  #counter-section {
+    background: linear-gradient(
+        40deg,
+        rgba(0, 0, 0, 0.616),
+        rgba(255, 255, 255, 0.575)
+      ),
+      url(/Images/Realestate/8.webp);
+    background-size: 100%;
+    background-position: top right;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    align-items: center;
+  }
+
+  .counter-section {
+    padding: 40px 1.75rem;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    width: 80%;
+    height: auto;
+    display: grid;
+    justify-items: right;
+    align-content: center;
+    align-items: center;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .span1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: goldenrod;
+  }
+}
